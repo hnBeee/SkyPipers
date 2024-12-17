@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sky Pipers</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!--Css Awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    >
+  </head>
+  <body>
+    <div class="game-container">
+      <div id="bird"></div>
+      <div id="pipe-container">
+        <div id="pipe-top"></div>
+        <div id="pipe-bottom"></div>
+      </div>
+      <div id="score"></div>
+
+      <div id="start">
+        <button id="play-btn">Play</button>
+      </div>
+      <div id="game-over" style="display: none">
+        <h1>Game Over</h1>
+        <p id="final-score"></p>
+        <p id="best-score"></p>
+        <button id="play-again-btn">Play Again</button>
+      </div>
+    </div>
+    <audio
+      id="jump-sound"
+      src="/assets/audio/jump-sound.wav"
+      preload="auto"
+    ></audio>
+    <audio
+      id="background-music"
+      src="/assets/audio/backsound.mp3"
+      preload="auto"
+      loop
+    ></audio>
+    <audio
+      id="die-sound"
+      src="/assets/audio/die-sound.wav"
+      preload="auto"
+    ></audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>

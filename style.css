@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: skyblue;
+    overflow: hidden;
+}
+
+.game-container {
+    position: relative;
+    width: 400px;
+    height: 600px;
+    background-image: url('/assets/images/bg.png');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+    border: 2px solid black;
+    overflow: hidden;
+}
+
+#start, #game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    color: white;
+    z-index: 10;
+}
+#game-over {
+    padding: 20px;
+}
+#start button, #game-over button {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #4caf50;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+#start button:hover, #game-over button:hover {
+    background-color: #45a049;
+}
+
+#bird {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-image: url('/assets/images/bird1.png');
+    background-size: 100%;
+    top: 50%;
+    left: 10%;
+    z-index: 2;
+}
+
+#pipe-container {
+    display: block;
+    position: absolute;
+    height: 600px;
+    width: 60px;
+    right: 0;
+    z-index: 1;
+}
+
+#pipe-top, #pipe-bottom {
+    position: absolute;
+    width: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#pipe-top {
+    background-image: url('/assets/images/pipe-top.png');
+    top: 0;
+}
+#pipe-bottom {
+    background-image: url('/assets/images/pipe-bottom.png');
+    bottom: 0;
+}
+
+#score {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    color: yellow;
+    z-index: 999;
+}
