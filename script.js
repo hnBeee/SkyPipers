@@ -122,7 +122,7 @@ function isColliding(birdRect, pipeRect) {
   );
 }
 
-function checkCollison() {
+function checkCollision() {
   const birdRect = bird.getBoundingClientRect();
   const pipeTopRect = pipeTop.getBoundingClientRect();
   const pipeBottomRect = pipeBottom.getBoundingClientRect();
@@ -217,7 +217,7 @@ function gameLoop() {
   if (isPlaying) {
     moveBird();
     movePipes();
-    checkCollison();
+    checkCollision();
     updateScore();
     updateBestScore();
     requestAnimationFrame(gameLoop);

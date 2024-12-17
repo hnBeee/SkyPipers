@@ -17,7 +17,7 @@ body {
     position: relative;
     width: 400px;
     height: 600px;
-    background-image: url('/images/bg.png');
+    background-image: url('images/bg.png');
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center center;
@@ -58,7 +58,7 @@ body {
     position: absolute;
     width: 40px;
     height: 40px;
-    background-image: url('/images/bird1.png');
+    background-image: url('images/bird1.png');
     background-size: 100%;
     top: 50%;
     left: 10%;
@@ -83,11 +83,11 @@ body {
 }
 
 #pipe-top {
-    background-image: url('/images/pipe-top.png');
+    background-image: url('images/pipe-top.png');
     top: 0;
 }
 #pipe-bottom {
-    background-image: url('/images/pipe-bottom.png');
+    background-image: url('images/pipe-bottom.png');
     bottom: 0;
 }
 
